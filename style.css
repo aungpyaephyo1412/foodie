@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.logo-img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    rotate: 360deg;
+  }
+}
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-link {
+  color: green;
+  text-decoration: none;
+  padding: 5px 15px;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+.home-container {
+  min-height: 100dvh;
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  padding: 15px 30px;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding-right: 75px;
+}
+
+.home-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: green;
+}
+
+.home-para {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.home-sub-para {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.icon-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  background: green;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.view-btn {
+  padding: 10px 20px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: green;
+    color: white;
+  }
+}
+
+.home-img {
+  display: block;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.about-container {
+  min-height: 100dvh;
+}
+
+.about-title {
+  color: green;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-sub-title {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.service-container {
+  min-height: 100dvh;
+}
+
+.service-title {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.service-sub-title {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.service-card {
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.service-card-img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 55px;
+  gap: 10px;
+}
+
+.special-container {
+  min-height: 100dvh;
+}
+.special-card {
+  box-shadow: 5px 5px 8px 0px black;
+  padding: 15px;
+  border-radius: 15px;
+
+  &:hover {
+    .service-card-img {
+      rotate: 15deg;
+    }
+  }
+}
+
+.special-card-img {
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.special-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+  margin: 15px 0;
+}
+
+.special-card-para {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.special-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    width: 100%;
+  }
+
+  .home-container {
+    grid-template-columns: 100%;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+}
